@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +44,530 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\MIS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\MIS\integrationservice.wsdl" />
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.AccountBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.AccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.AckFlowEndedAndBackToIdleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.AcknowledgementflowandBacktoIdleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.AuthenticateMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.AuthenticateMemberResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.BookingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.CancelOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.CancelRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.CancelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.ChargeCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.ConfirmPairingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.ConfirmPairingResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.CreateOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.CreateUpdateMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.CreateUpdateMemberResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.DeleteMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.DeleteMemberResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.DiaryEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.EFTPosReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.EventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetAccountBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetAccountInfoByResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetAccountInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetAccountPhotoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetCategoryInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetCategoryInfoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetChargeCodeInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetContactFromXeroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetDiaryEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetEventInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetGLAccountInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLastTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLedgerAccountsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLedgerCurrenciesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLedgerTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLocationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLogFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLoyaltyActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetLoyaltyBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetManualJournalGUIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberCategoryInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberChangesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberFieldsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberProfileExtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberStatementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetMemberVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetOpenOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetOrderDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetOrderLocksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetOrganisationInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPackageOptionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPaymentTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPOSEmployeesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPOSMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPosReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPOSSaleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetPOSSaleTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductByPLUResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductCategoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductOptionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductsByProductCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetProductsByProductGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetSystemCallerInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetSystemCallerInfoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetTablesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetTaxSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GetVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.GLAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.IssueVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LastTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LedgerAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LedgerCurrencyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LedgerTransactionGetByResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LedgerTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LedgerTransactionsGetByResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LockOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LoyaltyActivityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LoyaltyBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.LoyaltyTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MakePaymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.ManualJournalGUIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.ManualJournalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberChangeNotificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberChangesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberFieldsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberGroupsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberInternetReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberProfileExtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.MemberStatementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.OrganisationInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PairingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PaymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PhoneAlertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PhotoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PingAdaptorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PingedAdaptorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PingServerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSCancelOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSCreateOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSEmployeeLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSEmployeeLoginResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetEmployeesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetLocationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetMemberVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetOpenOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetOrderDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetOrderLocksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetPackageOptionsResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetPaymentTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetProductCategoriesResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetProductGroupsResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetProductListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetProductOptionsResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetProductResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetTablesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSGetVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSIssueMemberVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSLockOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSRescheduleOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSSaleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSSaleTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostBookingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostContactToXeroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostInvoiceToXeroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostJournalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostLedgerAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostLedgerCurrencyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostLedgerTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostLoyaltyTransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostManualJournalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostMemberChangeNotificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostMemberInternetReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.PostTopupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.POSUnlockOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.ReprintReceiptResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.RescheduleOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.SendPhoneAlertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.StartGameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.StartGameResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.StartPairingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.SubmitOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.TaxSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.TransactionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.UnlockOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.UpdateMemberPasswordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.UpdateMemberPasswordResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.XeroGetContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.XeroPostContactResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MIS\SPIIntegrationwithWCF.MIS.XeroPostInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\MIS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MIS\integrationservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MIS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MIS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MIS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
