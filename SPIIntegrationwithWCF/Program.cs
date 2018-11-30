@@ -17,7 +17,9 @@ namespace SPIIntegrationwithWCF
             var objProgram = new Program();
             var EftPosAddress = ConfigurationSettings.AppSettings["EFTPOSAddress"];
             var PosId = ConfigurationSettings.AppSettings["POSId"];
-            using (var serviceClient = new IntegrationServiceSoapClient())
+            
+            
+            using (var serviceClient = new  IntegrationServiceSoapClient())
             {
                 var pairingDevcieResponse = serviceClient.StartPairing(objProgram.GetAuthenticationHeader(), new PairingRequest()
                 {
